@@ -1,0 +1,115 @@
+Qflow static timing analysis logfile created on Wed Apr 6 14:42:02 IST 2022
+Running vesta static timing analysis
+vesta --long det_1011.rtlnopwr.v /usr/local/share/qflow/tech/osu050/osu05_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.3.17
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu05_stdcells"
+End of library at line 6606
+Parsing module "det_1011"
+Lib read /usr/local/share/qflow/tech/osu050/osu05_stdcells.lib:  Processed 6607 lines.
+Verilog netlist read:  Processed 33 lines.
+Number of paths analyzed:  1
+
+Top 1 maximum delay paths:
+Path DFFPOSX1_2/CLK to output pin out delay 905.699 ps
+      0.0 ps           clk:              -> DFFPOSX1_2/CLK
+    407.9 ps  cur_state_1_: DFFPOSX1_2/Q ->   NOR2X1_1/B
+    608.7 ps           _4_:   NOR2X1_1/Y ->   AND2X2_1/A
+    759.5 ps          _13_:   AND2X2_1/Y ->    BUFX2_1/A
+    905.7 ps           out:    BUFX2_1/Y -> out
+
+Computed maximum clock frequency (zero margin) = 1104.12 MHz
+-----------------------------------------
+
+Number of paths analyzed:  1
+
+Top 1 minimum delay paths:
+Path DFFPOSX1_3/CLK to output pin out delay 570.3 ps
+      0.0 ps           clk:              -> DFFPOSX1_3/CLK
+    303.4 ps  cur_state_2_: DFFPOSX1_3/Q ->   AND2X2_1/B
+    437.7 ps          _13_:   AND2X2_1/Y ->    BUFX2_1/A
+    570.3 ps           out:    BUFX2_1/Y -> out
+
+Design meets minimum hold timing.
+-----------------------------------------
+
+Number of paths analyzed:  6
+
+Top 6 maximum delay paths:
+Path input pin rstn to DFFPOSX1_1/D delay 394.112 ps
+      0.0 ps  rstn:            ->   AND2X2_2/B
+    153.1 ps   _1_: AND2X2_2/Y -> DFFPOSX1_1/D
+
+   setup at destination = 241.038
+
+Path input pin rstn to DFFPOSX1_2/D delay 386.059 ps
+      0.0 ps  rstn:            ->   AND2X2_3/A
+    145.8 ps   _2_: AND2X2_3/Y -> DFFPOSX1_2/D
+
+   setup at destination = 240.216
+
+Path input pin rstn to DFFPOSX1_3/D delay 386.059 ps
+      0.0 ps  rstn:            ->   AND2X2_4/A
+    145.8 ps   _3_: AND2X2_4/Y -> DFFPOSX1_3/D
+
+   setup at destination = 240.216
+
+Path input pin clk to DFFPOSX1_1/CLK delay 191.534 ps
+      0.0 ps  clk:   -> DFFPOSX1_1/CLK
+
+   setup at destination = 191.534
+
+Path input pin clk to DFFPOSX1_2/CLK delay 191.534 ps
+      0.0 ps  clk:   -> DFFPOSX1_2/CLK
+
+   setup at destination = 191.534
+
+Path input pin clk to DFFPOSX1_3/CLK delay 191.534 ps
+      0.0 ps  clk:   -> DFFPOSX1_3/CLK
+
+   setup at destination = 191.534
+
+-----------------------------------------
+
+Number of paths analyzed:  6
+
+Top 6 minimum delay paths:
+Path input pin rstn to DFFPOSX1_3/D delay 29.2817 ps
+      0.0 ps  rstn:            ->   AND2X2_4/A
+    125.8 ps   _3_: AND2X2_4/Y -> DFFPOSX1_3/D
+
+   hold at destination = -96.4846
+
+Path input pin rstn to DFFPOSX1_2/D delay 29.2817 ps
+      0.0 ps  rstn:            ->   AND2X2_3/A
+    125.8 ps   _2_: AND2X2_3/Y -> DFFPOSX1_2/D
+
+   hold at destination = -96.4846
+
+Path input pin rstn to DFFPOSX1_1/D delay 38.9373 ps
+      0.0 ps  rstn:            ->   AND2X2_2/B
+    134.4 ps   _1_: AND2X2_2/Y -> DFFPOSX1_1/D
+
+   hold at destination = -95.4595
+
+Path input pin clk to DFFPOSX1_3/CLK delay 121.2 ps
+      0.0 ps  clk:   -> DFFPOSX1_3/CLK
+
+   hold at destination = 121.2
+
+Path input pin clk to DFFPOSX1_2/CLK delay 121.2 ps
+      0.0 ps  clk:   -> DFFPOSX1_2/CLK
+
+   hold at destination = 121.2
+
+Path input pin clk to DFFPOSX1_1/CLK delay 121.2 ps
+      0.0 ps  clk:   -> DFFPOSX1_1/CLK
+
+   hold at destination = 121.2
+
+-----------------------------------------
+

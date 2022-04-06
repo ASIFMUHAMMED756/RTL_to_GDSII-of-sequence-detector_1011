@@ -1,0 +1,11 @@
+Qflow project preparation output log Wed Apr  6 14:41:57 2022
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu050
+
+No actions specified on command line;
+creating qflow script file /home/vlsilab/vsdflow/qflow_experiments/qflow_exec.sh only.
+Uncomment lines in this file and source the file to run the flow.

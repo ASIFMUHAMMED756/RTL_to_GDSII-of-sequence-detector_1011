@@ -1,0 +1,183 @@
+Qflow route logfile created on Wed Apr 6 14:42:03 IST 2022
+qrouter -noc  -s det_1011.cfg
+Qrouter detail maze router version 1.4.59.T
+Reading LEF data from file /usr/local/share/qflow/tech/osu050/osu050_stdcells.lef.
+LEF Read, Line 115: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 116: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 120: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 121: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 131: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 132: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 137: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3221 lines.
+LEF Read: encountered 0 errors and 8 warnings total.
+Reading DEF data from file det_1011.def.
+Diagnostic: Design name: "det_1011"
+  Processed 2 vias total.
+  Processed 40 subcell instances total.
+  Processed 4 pins total.
+  Processed 27 nets total (0 fixed).
+  Processed 2 special nets total (4 fixed).
+DEF read: Processed 208 lines.
+Output scale = microns / 100, precision 1
+No antenna cell defined!
+There are 29 nets in this design.
+*** Running stage1 routing with defaults
+Finished routing net cur_state[0]
+Nets remaining: 28
+Finished routing net cur_state[1]
+Nets remaining: 27
+Finished routing net cur_state[2]
+Nets remaining: 26
+Finished routing net _4_
+Nets remaining: 25
+Finished routing net in
+Nets remaining: 24
+Finished routing net _10_
+Nets remaining: 23
+Finished routing net rstn
+Nets remaining: 22
+Failed to route net clk
+Finished routing net _8_
+Nets remaining: 21
+Finished routing net _13_
+Nets remaining: 20
+Finished routing net _5_
+Nets remaining: 19
+Finished routing net _6_
+Nets remaining: 18
+Finished routing net _7_
+Nets remaining: 17
+Finished routing net _9_
+Nets remaining: 16
+Finished routing net _11_
+Nets remaining: 15
+Finished routing net _12_
+Nets remaining: 14
+Finished routing net _1_
+Nets remaining: 13
+Finished routing net _2_
+Nets remaining: 12
+Finished routing net _3_
+Nets remaining: 11
+Finished routing net out
+Nets remaining: 10
+
+----------------------------------------------
+Progress: Stage 1 total routes completed: 39
+Failed net routes: 1
+----------------------------------------------
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 1
+Best route of clk collides with net: rstn 
+Ripping up blocking net rstn
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 43
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 1st round
+Finished routing net cur_state[0]
+Nets remaining: 28
+Finished routing net cur_state[1]
+Nets remaining: 27
+Finished routing net cur_state[2]
+Nets remaining: 26
+Finished routing net _4_
+Nets remaining: 25
+Finished routing net in
+Nets remaining: 24
+Finished routing net _10_
+Nets remaining: 23
+Finished routing net rstn
+Nets remaining: 22
+Finished routing net clk
+Nets remaining: 21
+Finished routing net _8_
+Nets remaining: 20
+Keeping route for net _13_
+Finished routing net _5_
+Nets remaining: 18
+Finished routing net _6_
+Nets remaining: 17
+Finished routing net _7_
+Nets remaining: 16
+Finished routing net _9_
+Nets remaining: 15
+Finished routing net _11_
+Nets remaining: 14
+Keeping route for net _12_
+Finished routing net _1_
+Nets remaining: 12
+Finished routing net _2_
+Nets remaining: 11
+Keeping route for net _3_
+Finished routing net out
+Nets remaining: 9
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 80
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 2nd round
+Finished routing net cur_state[0]
+Nets remaining: 28
+Finished routing net cur_state[1]
+Nets remaining: 27
+Finished routing net cur_state[2]
+Nets remaining: 26
+Finished routing net _4_
+Nets remaining: 25
+Finished routing net in
+Nets remaining: 24
+Finished routing net _10_
+Nets remaining: 23
+Finished routing net rstn
+Nets remaining: 22
+Finished routing net clk
+Nets remaining: 21
+Finished routing net _8_
+Nets remaining: 20
+Keeping route for net _13_
+Finished routing net _5_
+Nets remaining: 18
+Finished routing net _6_
+Nets remaining: 17
+Finished routing net _7_
+Nets remaining: 16
+Finished routing net _9_
+Nets remaining: 15
+Finished routing net _11_
+Nets remaining: 14
+Keeping route for net _12_
+Finished routing net _1_
+Nets remaining: 12
+Finished routing net _2_
+Nets remaining: 11
+Keeping route for net _3_
+Finished routing net out
+Nets remaining: 9
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 117
+No failed routes!
+----------------------------------------------
+*** Writing DEF file det_1011_route.def
+emit_routes():  DEF file has 27 nets and 4 specialnets.
+but qrouter wants to write 29 nets and specialnets.
+----------------------------------------------
+Final: No failed routes!
+----------------------------------------------
+*** Writing RC file det_1011_route.rc
+Running annotate.tcl antenna.out /home/vlsilab/vsdflow/qflow_experiments/synthesis/det_1011.rtlnopwr.v
+  /home/vlsilab/vsdflow/qflow_experiments/synthesis/det_1011.spc /home/vlsilab/vsdflow/qflow_experiments/synthesis/det_1011.rtlnopwr.anno.v
+  /home/vlsilab/vsdflow/qflow_experiments/synthesis/det_1011.anno.spc  /usr/local/share/qflow/tech/osu050/osu050_stdcells.sp /home/vlsilab/vsdflow/qflow_experiments/synthesis/det_1011_powerground
+Running annotate.tcl
+found cell FILL pinlist vdd gnd
+Done with annotate.tcl
+Router script ended on Wed Apr 6 14:42:04 IST 2022
